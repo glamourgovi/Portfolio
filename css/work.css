@@ -1,0 +1,120 @@
+#sec2 .my-work-head{
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+#sec2 .my-work-head h1{
+    font-family: 'Coiny', cursive;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-size: 4mu;
+}
+#sec2 .my-work-head #color{
+    color: red;
+}
+#sec2 .work-body{
+    width: 100%;
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#sec2 .work-body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+#sec2 .work-body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+#sec2 .work-body::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#sec2 .work-body::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+
+
+
+
+
+
+#sec2 .work-body .work-content .work-img img{
+    width: 100%;
+}
+#sec2 .work-body .work-content{
+    margin-top: 50px;
+}
+#sec2 .work-body .work-content .work-text{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+#sec2 .work-body .work-content .work-text h1{
+    color: red;
+    font-family: 'Bree Serif', serif;
+    text-decoration: underline;
+}
+#sec2 .work-body .work-content .work-text p{
+    padding-left: 10px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 2;
+    font-size: 18px;
+    color: white;
+    z-index: -2;
+}
+#sec2 .work-body .work-content .work-text a{
+    position: relative;
+    float: right;
+    margin-right: 5%;
+    border: 2px solid red;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: red;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+    z-index: 2;
+}
+#sec2 .work-body .work-content .work-text a:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: red;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+    transform-origin: left;
+}
+#sec2 .work-body .work-content .work-text a:hover{
+    color: white;
+}
+#sec2 .work-body .work-content .work-text a:hover:before{
+    transform: scaleX(100%);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
